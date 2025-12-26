@@ -106,7 +106,7 @@ export default function ExtraPage() {
                     <span className="ml-4">resume.pdf</span>
                   </div>
                   <Button variant="outline" size="sm" className="font-mono" asChild>
-                    <a href="#" download>$ wget</a>
+                    <a href="/dachi_suramelashvili.pdf" download>$ wget</a>
                   </Button>
                 </div>
               </div>

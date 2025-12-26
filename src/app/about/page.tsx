@@ -43,7 +43,7 @@ export default function AboutPage() {
                   <p className="text-muted-foreground text-sm">Maintenance and improvement of product, primarily authorization and AI features</p>
                 </div>
                 <div className="border-l-2 border-muted pl-4">
-                  <p className="text-sm text-muted-foreground font-mono">2025 Feb - 2025 Dec</p>
+                  <p className="text-sm text-muted-foreground font-mono">2025 Feb - Present</p>
                   <h3 className="font-semibold">Software Developer</h3>
                   <p className="text-foreground text-sm">Zerobyte</p>
                   <p className="text-muted-foreground text-sm">Assistance in designing and implementing fintech problem solutions</p>

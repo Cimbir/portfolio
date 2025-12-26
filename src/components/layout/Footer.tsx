@@ -1,3 +1,5 @@
+import { GITHUB_URL, LINKEDIN_URL } from '@/constants'
+
 export function Footer() {
   return (
     <footer className="w-full py-6 border-t border-primary/20">
@@ -8,7 +10,7 @@ export function Footer() {
           </p>
           <div className="flex gap-4">
             <a
-              href="https://github.com/Cimbir"
+              href={GITHUB_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -16,7 +18,7 @@ export function Footer() {
               [github]
             </a>
             <a
-              href="https://www.linkedin.com/in/dachi-suramelashvili-77042b305/"
+              href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"

@@ -3,10 +3,11 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { GITHUB_URL, LINKEDIN_URL, EMAIL } from '@/constants'
 
 export default function ContactPage() {
   const [emailCopied, setEmailCopied] = useState(false);
-  const email = "dachis@outlook.com";
+  const email = EMAIL;
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email);
@@ -100,12 +101,12 @@ export default function ContactPage() {
                 {[
                   {
                     name: "github",
-                    url: "https://github.com/yourusername",
+                    url: GITHUB_URL,
                     description: "drwxr-xr-x  repositories & contributions",
                   },
                   {
-                    name: "linkedin", 
-                    url: "https://linkedin.com/in/yourusername",
+                    name: "linkedin",
+                    url: LINKEDIN_URL,
                     description: "drwxr-xr-x  professional network",
                   },
                 ].map((social) => (
