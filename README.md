@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio 
+
+A portfolio web page because why not?
+
+## Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **UI Components**: [Shadcn/ui](https://ui.shadcn.com/)
+- **Language**: TypeScript
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── globals.css        # Global styles and Tailwind imports
+│   ├── layout.tsx         # Root layout with Header and Footer
+│   └── page.tsx           # Home page with all sections
+├── components/
+│   ├── layout/
+│   │   ├── Header.tsx     # Navigation header
+│   │   ├── Footer.tsx     # Site footer
+│   │   └── index.ts       # Layout exports
+│   ├── sections/
+│   │   ├── Hero.tsx       # Hero section with intro
+│   │   ├── About.tsx      # About me section
+│   │   ├── Projects.tsx   # Featured projects
+│   │   ├── Skills.tsx     # Skills & technologies
+│   │   ├── Contact.tsx    # Contact information
+│   │   └── index.ts       # Section exports
+│   └── ui/                # Shadcn/ui components
+└── lib/
+    └── utils.ts           # Utility functions
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18.18 or later
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Customization
+
+### Personal Information
+
+Update the following files with your information:
+
+1. **`src/components/sections/Hero.tsx`** - Your name, title, and introduction
+2. **`src/components/sections/About.tsx`** - Your background and what you do
+3. **`src/components/sections/Projects.tsx`** - Your featured projects
+4. **`src/components/sections/Skills.tsx`** - Your skills and technologies
+5. **`src/components/sections/Contact.tsx`** - Your contact information
+6. **`src/components/layout/Footer.tsx`** - Your social links
+
+### Adding Profile Image
+
+Replace the avatar placeholder by adding your image to the `public/` folder and updating the `src` in `Hero.tsx`.
+
+### Adding More Shadcn/ui Components
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npx shadcn@latest add [component-name]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Available components: https://ui.shadcn.com/docs/components
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This project can be deployed to [Vercel](https://vercel.com/), [Netlify](https://netlify.com/), or any other hosting platform that supports Next.js.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
+MIT License - feel free to use this template for your own portfolio!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
